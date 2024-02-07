@@ -1,11 +1,21 @@
 import './App.css';
-import Greeting from './Greeting';
+import React, { useState } from 'react';
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return <p>Count: {this.state.count}</p>;
+  }
+}
 
 function App() {
   return (
     <div className="App">
-      {/* <p style={{ textAlign: 'left', paddingLeft: '10px' }}>Olá Mundo!</p> */}
-      <Greeting />
+      <Counter />
     </div>
   );
 }
