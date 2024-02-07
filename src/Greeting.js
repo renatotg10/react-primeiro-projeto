@@ -1,7 +1,17 @@
 import React from 'react';
 
 function Greeting() {
-    return <h1>Hello, React!</h1>;
+    function handleClick() {
+        alert('Botão clicado!');
+    }
+
+    return (
+        <div>
+            <h1>Hello, React!</h1>
+            <button onClick={handleClick}>Clique aqui</button>
+        </div>
+    );
+
 }
 
 export default Greeting;

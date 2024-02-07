@@ -34,6 +34,7 @@ Lembre-se, a prática é essencial. Desenvolva projetos próprios, colabore em p
 2. **Configuração do Ambiente:**
    - Instalação do Node.js e npm.
    - Configuração de um projeto React com Create React App.
+   - Exibindo o texto **Olá Mundo!**
 
 3. **Fundamentos do React:**
    - Trabalhar com JSX.
@@ -191,9 +192,9 @@ A partir deste ponto, você pode começar a editar os arquivos no diretório `sr
 
 Lembre-se de que o Create React App lida com muitas configurações complicadas para você, permitindo que você se concentre mais na codificação e menos na configuração do ambiente.
 
-Depois de criar o projeto, você pode explorar os arquivos gerados e começar a construir seus componentes React. Boa codificação!
+Depois de criar o projeto, você pode explorar os arquivos gerados e começar a construir seus componentes React.
 
-### Olá Mundo!
+### Exibindo a mensagem "Olá Mundo!"
 
 Para iniciar, vamos modificar o arquivo `App.js` do diretório `src` para exibir a mensagem **Olá Mundo!**.
 
@@ -222,8 +223,6 @@ npm start
 Isso iniciará o servidor de desenvolvimento e abrirá automaticamente uma nova aba do navegador com o seu aplicativo React.
 
 Se o texto **Olá Mundo!** estiver sendo exibido centralizado na página, poderá alinhar ele a esquerda alterando o código dessa forma:
-
-Se você deseja adicionar um `padding-left` de 10 pixels ao parágrafo, você pode ajustar o estilo inline da seguinte maneira:
 
 ```jsx
 import React from 'react';
@@ -316,13 +315,13 @@ O principal arquivo que você irá modificar para testar os exemplos práticos �
 
      function Greeting() {
        function handleClick() {
-         alert('Button clicked!');
+         alert('Botão clicado!');
        }
 
        return (
          <div>
            <h1>Hello, React!</h1>
-           <button onClick={handleClick}>Click me</button>
+           <button onClick={handleClick}>Clique aqui</button>
          </div>
        );
      }
