@@ -193,6 +193,58 @@ Lembre-se de que o Create React App lida com muitas configurações complicadas 
 
 Depois de criar o projeto, você pode explorar os arquivos gerados e começar a construir seus componentes React. Boa codificação!
 
+### Olá Mundo!
+
+Para iniciar, vamos modificar o arquivo `App.js` do diretório `src` para exibir a mensagem **Olá Mundo!**.
+
+Abra o arquivo `App.js` e modifique o código, deixando como abaixo:
+
+```jsx
+import React from 'react';
+
+function App() {
+  return (
+    <div className="App">
+      <p>Olá Mundo!</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Execute o seguinte comando para iniciar o servidor de desenvolvimento e abrir o seu projeto no navegador:
+
+```bash
+npm start
+```
+
+Isso iniciará o servidor de desenvolvimento e abrirá automaticamente uma nova aba do navegador com o seu aplicativo React.
+
+Se o texto **Olá Mundo!** estiver sendo exibido centralizado na página, poderá alinhar ele a esquerda alterando o código dessa forma:
+
+Se você deseja adicionar um `padding-left` de 10 pixels ao parágrafo, você pode ajustar o estilo inline da seguinte maneira:
+
+```jsx
+import React from 'react';
+
+function App() {
+  return (
+    <div className="App">
+      <p style={{ textAlign: 'left', paddingLeft: '10px' }}>Olá Mundo!</p>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Ao adicionar `style={{ textAlign: 'left' }}` à tag `<p>`, você está aplicando um estilo inline que define o alinhamento do texto como à esquerda. Isso fará com que o texto "Olá Mundo!" seja alinhado à esquerda dentro do contêiner `div`.
+
+Ao adicionar `paddingLeft: '10px'` ao estilo inline, você está definindo um espaçamento à esquerda de 10 pixels para o parágrafo. Isso resultará em um texto "Olá Mundo!" alinhado à esquerda com um padding de 10 pixels à esquerda.
+
+**Observação:** Como poderá observar, se o servidor do React já estiver em execução, sempre que faz alguma modificação no arquivo `App.js`, é atualizado de forma automática na página no navegador, não sendo necessário atualizar a página no navegador.
+
 ### Fundamentos do React
 
 Ótimo, vamos detalhar como você pode praticar esses fundamentos no seu projeto React já criado. Vamos usar o exemplo do projeto criado com o Create React App.
@@ -223,7 +275,8 @@ O principal arquivo que você irá modificar para testar os exemplos práticos �
 ### Modificando o `App.js`
 
 1. **Criação de Componentes:**
-   - Você pode criar novos componentes diretamente no arquivo `App.js` ou criar arquivos separados para cada componente. Por exemplo, crie um novo arquivo chamado `Greeting.js`:
+   - Você pode criar novos componentes diretamente no arquivo `App.js` ou criar arquivos separados para cada componente. Por exemplo, crie um novo arquivo chamado `Greeting.js` dentro
+   da pasta `src`:
 
      ```jsx
      // Greeting.js
